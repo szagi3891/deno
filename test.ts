@@ -46,7 +46,16 @@ import { timeout } from "@reactive/utils";
 //   console.log("Express listening on :3000");
 // });
 
-const main = async (bbb: string): Promise<void> => {
+const add = ((): boolean | undefined => {
+
+    return false;
+})();
+
+if (add) {
+    console.info('aaa');
+}
+
+const main = async (bbb: string | undefined): Promise<void> => {
 
     console.info('hello');
 
@@ -62,3 +71,11 @@ const aaa: Record<string, string> = {};
 const bbb = aaa['dd'];
 
 await main(bbb);
+
+
+for await (const entry of Deno.readDir('.')) {
+    console.info(entry);
+}
+const aaa1 = Deno.args[0];
+
+console.info(Deno.args);
