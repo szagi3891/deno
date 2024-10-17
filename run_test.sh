@@ -1,1 +1,2 @@
-deno run -A ./test.ts
+deno test *.test.ts
+
