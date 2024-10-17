@@ -1,4 +1,4 @@
-import { assert, assertEquals } from "jsr:@std/assert";
+import { /*assert,*/ assertEquals } from "jsr:@std/assert";
 
 Deno.test("assert works correctly", () => {
     const aa = {
