@@ -1,6 +1,6 @@
 {
   "imports": {
-    "@reactive/utils": "jsr:@reactive/utils@^0.5.83",
+    "@reactive/utils": "jsr:@reactive/utils@^0.5.88",
     "express": "npm:express@^4.21.1"
   },
   "compilerOptions": {

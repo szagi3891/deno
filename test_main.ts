@@ -1,4 +1,4 @@
-import { timeout } from "@reactive/utils";
+import { timeout, Value } from "@reactive/utils";
 
 
 // import express from 'express';
@@ -79,3 +79,7 @@ for await (const entry of Deno.readDir('.')) {
 const aaa1 = Deno.args[0];
 
 console.info(Deno.args);
+
+// Deno.addSignalListener(''
+// https://docs.deno.com/examples/os-signals/
+
